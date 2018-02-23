@@ -17,8 +17,8 @@ http {
     listen	    443 ssl;
     server_name	    __MY_DOMAIN_NAME__;
 
-    ssl_certificate	/etc/letsencrypt/live/__MY_DOMAIN_NAME__/fullchain.pem;
-    ssl_certificate_key	/etc/letsencrypt/live/__MY_DOMAIN_NAME__/privkey.pem;
+    ssl_certificate	/etc/grid-security/hostcert.pem;
+    ssl_certificate_key	/etc/grid-security/hostkey.pem;
 
     ssl_session_cache	shared:SSL:20m;
     ssl_session_timeout	180m;
