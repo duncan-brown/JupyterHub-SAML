@@ -49,11 +49,11 @@ http {
     }
 
     location /jupyter {
-      proxy_pass         https://saml/jupyter;
+      proxy_pass         https://sugwg-jobs.phy.syr.edu/jupyter;
     }
 
     location /hub {
-      proxy_pass         https://saml/jupyter/hub;
+      proxy_pass         https://sugwg-jobs.phy.syr.edu/jupyter/hub;
     }
 
     location /user {
@@ -61,7 +61,7 @@ http {
     }
 
     location /saml {
-      proxy_pass         https://saml/saml;
+      proxy_pass         https://sugwg-jobs.phy.syr.edu/saml;
     }
   }
 }
